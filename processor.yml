@@ -1,0 +1,8 @@
+---
+spring:
+	profiles: cloud
+	data:
+		mongodb:
+			uri: ${cloud.services.${PREFIX:}mongodb.credentials.uri}
+app:
+	baseUri: http://${eureka.instance.hostname}	
